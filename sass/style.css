@@ -1,0 +1,331 @@
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 32px;
+}
+nav p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+}
+nav > img {
+  display: none;
+  min-width: 9.5%;
+  min-height: 9.5%;
+  max-width: 99.5%;
+  max-height: 99.5%;
+}
+nav ul {
+  border-radius: 80px;
+  width: 480px;
+  height: 56px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  gap: 16px;
+  background: black;
+  justify-content: center;
+}
+nav ul li {
+  padding: 16px;
+}
+nav ul li a {
+  color: #C4C4C4;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: -1%;
+  line-height: 1.4;
+}
+nav ul .active {
+  background: white;
+  text-align: center;
+  border-radius: 48px;
+  min-width: 86px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+}
+nav ul .active a {
+  color: black;
+}
+nav ul .notifications {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+nav ul .notifications span {
+  color: black;
+  background: #C4C4C4;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+
+@media screen and (max-width: 732px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  nav > img {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 46px;
+  gap: 66px;
+  margin-bottom: 136px;
+}
+header .headerTitle {
+  display: flex;
+}
+header .headerTitle h1 {
+  font-size: 227px;
+  line-height: 90%;
+  letter-spacing: -2%;
+  max-width: 984px;
+  margin-right: 50px;
+}
+header .headerTitle button {
+  height: 92px;
+  width: 218px;
+  border-radius: 144px;
+  padding: 32px;
+  gap: 8px;
+  background: #f9f9f9;
+  outline: none;
+  border: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: -1%;
+  font-weight: 500;
+  margin-top: 282px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .headerText {
+  display: flex;
+  max-width: 1229px;
+  gap: 672px;
+  justify-content: center;
+  margin: 0 40px;
+}
+header .headerText div p:first-child {
+  font-weight: 500;
+  margin-bottom: 9px;
+  font-size: 24px;
+  letter-spacing: -1%;
+  line-height: 130%;
+}
+header .headerText div p:last-child {
+  font-size: 20px;
+  letter-spacing: -1%;
+}
+header .headerText > p {
+  font-size: 20px;
+  letter-spacing: -1%;
+  width: 471px;
+}
+
+@media screen and (max-width: 1333px) {
+  header {
+    margin-top: 49px;
+    margin-bottom: 69px;
+  }
+  header .headerTitle h1 {
+    font-size: 84px;
+  }
+  header .headerTitle button {
+    margin-top: 83px;
+  }
+  header .headerText {
+    gap: 194px;
+  }
+  header .headerText div p:first-child {
+    font-size: 20px;
+  }
+  header .headerText div p:last-child {
+    font-size: 14px;
+  }
+  header .headerText > p {
+    font-size: 16px;
+    width: 390px;
+  }
+}
+@media screen and (max-width: 732px) {
+  header {
+    gap: 20px;
+    margin-bottom: 55px;
+  }
+  header .headerTitle {
+    flex-direction: column;
+  }
+  header .headerTitle h1 {
+    font-size: 48px;
+  }
+  header .headerTitle button {
+    width: 129px;
+    height: 40px;
+    padding: 8px;
+    gap: 8px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 164px;
+  }
+  header .headerText {
+    gap: 46px;
+  }
+  header .headerText > p {
+    font-size: 14px;
+    width: 207px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background: white;
+  color: black;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100vw;
+  align-items: center;
+}
+main .projectsText {
+  display: flex;
+  max-width: 1217px;
+  gap: 754px;
+  align-items: flex-end;
+}
+main .projectsText .projectsTitle h2 {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: -1%;
+  margin-bottom: 11px;
+}
+main .projectsText .projectsTitle p {
+  font-size: 20px;
+  letter-spacing: -1%;
+  width: 392px;
+}
+main .projectsText .projectsMore {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+main .projectsImages {
+  display: grid;
+  grid-template-columns: repeat(2, 592px);
+  gap: 48px 32px;
+}
+main .projectsImages .projectsImage {
+  width: 592px;
+  height: 586px;
+  letter-spacing: -1%;
+  font-size: 20px;
+}
+main .projectsImages .projectsImage img {
+  border-radius: 32px;
+  margin-bottom: 24px;
+}
+main .projectsImages .projectsImage img + p {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+@media screen and (max-width: 1333px) {
+  main .projectsText {
+    gap: 225px;
+  }
+  main .projectsText .projectsTitle h2 {
+    font-size: 32px;
+  }
+  main .projectsText .projectsTitle p {
+    font-size: 16px;
+  }
+  main .projectsImages {
+    display: grid;
+    grid-template-columns: repeat(2, 330px);
+    gap: 43px 30px;
+  }
+  main .projectsImages .projectsImage {
+    overflow: hidden;
+    width: 330px;
+    height: 354px;
+  }
+  main .projectsImages .projectsImage img {
+    width: 330px;
+    height: 354px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 732px) {
+  main .projectsText {
+    padding: 0 16px;
+    padding-right: 13px;
+    gap: 0;
+    align-items: flex-start;
+    max-width: 100vw;
+    margin-bottom: 32px;
+  }
+  main .projectsText .projectsTitle h2 {
+    font-size: 24px;
+  }
+  main .projectsText .projectsTitle p {
+    font-size: 14px;
+    width: 350px;
+  }
+  main .projectsText .projectsMore {
+    position: absolute;
+    margin-left: 275px;
+  }
+  main .projectsImages {
+    grid-template-columns: 343px;
+  }
+  main .projectsImages .projectsImage {
+    height: 363px;
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+  }
+  main .projectsImages .projectsImage img {
+    width: 343px;
+    height: 289px;
+    border-radius: 18px;
+    margin-bottom: 13.91px;
+  }
+}/*# sourceMappingURL=style.css.map */

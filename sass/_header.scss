@@ -1,0 +1,141 @@
+header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 46px;
+  gap: 66px;
+  margin-bottom: 136px;
+
+  .headerTitle {
+    display: flex;
+
+    h1 {
+      font-size: 227px;
+      line-height: 90%;
+      letter-spacing: -2%;
+      max-width: 984px;
+      margin-right: 50px;
+    }
+
+    button {
+      height: 92px;
+      width: 218px;
+      border-radius: 144px;
+      padding: 32px;
+      gap: 8px;
+      background: #f9f9f9;
+      outline: none;
+      border: none;
+      color: black;
+      font-size: 20px;
+      letter-spacing: -1%;
+      font-weight: 500;
+      margin-top: 282px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // Header Text
+
+  .headerText {
+    display: flex;
+    max-width: 1229px;
+    gap: 672px;
+    justify-content: center;
+    margin: 0 40px;
+
+    div {
+      p:first-child {
+        font-weight: 500;
+        margin-bottom: 9px;
+        font-size: 24px;
+        letter-spacing: -1%;
+        line-height: 130%;
+      }
+
+      p:last-child {
+        font-size: 20px;
+        letter-spacing: -1%;
+      }
+    }
+
+    & > p {
+      font-size: 20px;
+      letter-spacing: -1%;
+      width: 471px;
+    }
+  }
+}
+
+@media screen and (max-width: 1333px) {
+  header {
+    margin-top: 49px;
+    margin-bottom: 69px;
+
+    .headerTitle {
+      h1 {
+        font-size: 84px;
+      }
+
+      button {
+        margin-top: 83px;
+      }
+    }
+
+    .headerText {
+      gap: 194px;
+
+      div {
+        p:first-child {
+          font-size: 20px;
+        }
+
+        p:last-child {
+          font-size: 14px;
+        }
+      }
+
+      & > p {
+        font-size: 16px;
+        width: 390px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 732px) {
+  header {
+    gap: 20px;
+    margin-bottom: 55px;
+
+    .headerTitle {
+      flex-direction: column;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      button {
+        width: 129px;
+        height: 40px;
+        padding: 8px;
+        gap: 8px;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 164px;
+      }
+    }
+
+    .headerText {
+      gap: 46px;
+
+      & > p {
+        font-size: 14px;
+        width: 207px;
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@use "./nav";
+@use "./header";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  background: white;
+  color: black;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+// Main
+
+main {
+  display: flex;
+  flex-direction: column;
+  // margin: 0 40px;
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .projectsText {
+    display: flex;
+    max-width: 1217px;
+    gap: 754px;
+    align-items: flex-end;
+
+    .projectsTitle {
+      h2 {
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: -1%;
+        margin-bottom: 11px;
+      }
+
+      p {
+        font-size: 20px;
+        letter-spacing: -1%;
+        width: 392px;
+      }
+    }
+
+    .projectsMore {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+
+  // Projects Images
+
+  .projectsImages {
+    display: grid;
+    grid-template-columns: repeat(2, 592px);
+    gap: 48px 32px;
+
+    .projectsImage {
+      width: 592px;
+      height: 586px;
+      letter-spacing: -1%;
+      font-size: 20px;
+
+      img {
+        border-radius: 32px;
+        margin-bottom: 24px;
+      }
+
+      img + p {
+        font-weight: 500;
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1333px) {
+    .projectsText {
+      gap: 225px;
+
+      .projectsTitle {
+        h2 {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .projectsImages {
+      display: grid;
+      grid-template-columns: repeat(2, 330px);
+      gap: 43px 30px;
+
+      .projectsImage {
+        overflow: hidden;
+        width: 330px;
+        height: 354px;
+
+        img {
+          width: 330px;
+          height: 354px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 732px) {
+    .projectsText {
+      padding: 0 16px;
+      padding-right: 13px;
+      gap: 0;
+      align-items: flex-start;
+      max-width: 100vw;
+      margin-bottom: 32px;
+
+      .projectsTitle {
+        h2 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+          width: 350px;
+        }
+      }
+
+      .projectsMore {
+        position: absolute;
+        margin-left: 275px;
+      }
+    }
+
+    .projectsImages {
+      grid-template-columns: 343px;
+
+      .projectsImage {
+        height: 363px;
+        width: 343px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          width: 343px;
+          height: 289px;
+          border-radius: 18px;
+          margin-bottom: 13.91px;
+        }
+      }
+    }
+  }
+}
